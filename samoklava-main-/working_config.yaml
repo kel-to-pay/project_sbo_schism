@@ -69,7 +69,7 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-0.5 kx, -1 ky]
+        shift: [-0.25 kx, -1 ky]
       columns:
         near:
           key:
@@ -216,27 +216,7 @@ outlines:
     # TODO use footprints with pad + via reinforcement as mounting holes
     - "-mounting_holes"
 pcbs:
-  top_plate:
-    outlines:
-      edge:
-        outline: plate
-        layer: Edge.Cuts
-    footprints:
-      jlc_order_number:
-        what: text
-        where:
-          ref:
-            - matrix_ring_home
-          shift: [-0.25 kx, 0.5 ky]
-        params:
-          text: "JLCJLCJLCJLC"
-          justify: left
-  bottom_plate:
-    outlines:
-      edge:
-        outline: bottom_outline
-        layer: Edge.Cuts
-  board:
+ board:
     outlines:
       edge:
         outline: pcb
